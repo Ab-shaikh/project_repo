@@ -1,0 +1,146 @@
+
+
+============================== 2025-09-29 08:22:56.216764 | 85e4a770-1a47-4726-838b-d0e076e6e4ac ==============================
+[0m08:22:56.216764 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:22:56.217379 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:22:56.217656 [debug] [MainThread]: Tracking: do not track
+[0m08:22:56.231463 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:22:56.232040 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:22:57.149837 [debug] [MainThread]: 1699: static parser successfully parsed marts/mart_example.sql
+[0m08:22:57.165940 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:22:57.171725 [debug] [MainThread]: Flushing usage events
+[0m08:22:57.172101 [error] [MainThread]: Encountered an error:
+Compilation Error in model stg_test_table (models/staging/stg_test_table.sql)
+  expected token ',', got 'primary'
+    line 4
+      unique_key='id'   -- your primary key
+
+
+============================== 2025-09-29 08:25:03.286861 | 5067f91f-fd72-47f8-8f38-274ba8336fa8 ==============================
+[0m08:25:03.286861 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:25:03.287478 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:25:03.287766 [debug] [MainThread]: Tracking: do not track
+[0m08:25:03.301104 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:25:03.301723 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:25:04.171445 [debug] [MainThread]: 1699: static parser successfully parsed marts/mart_example.sql
+[0m08:25:04.188327 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:25:04.192450 [debug] [MainThread]: Flushing usage events
+[0m08:25:04.192859 [error] [MainThread]: Encountered an error:
+Compilation Error in model stg_test_table (models/staging/stg_test_table.sql)
+  expected token ',', got 'primary'
+    line 4
+      unique_key='id'   -- your primary key
+
+
+============================== 2025-09-29 08:28:29.683094 | 3330354b-000d-4f60-9446-646a43d215f0 ==============================
+[0m08:28:29.683094 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:28:29.683686 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:28:29.683968 [debug] [MainThread]: Tracking: do not track
+[0m08:28:29.696972 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:28:29.697597 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:28:30.561561 [debug] [MainThread]: 1699: static parser successfully parsed marts/mart_example.sql
+[0m08:28:30.578123 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:28:30.590562 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging/stg_test_table.sql
+[0m08:28:30.629524 [debug] [MainThread]: Flushing usage events
+[0m08:28:30.630010 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.my_dbt_project.mart_example' (models/marts/mart_example.sql) depends on a node named 'stg_example' which was not found
+
+
+============================== 2025-09-29 08:30:36.968405 | b5a186dd-ce02-4a7d-913a-7e650ea7c19e ==============================
+[0m08:30:36.968405 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:30:36.968977 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:30:36.969736 [debug] [MainThread]: Tracking: do not track
+[0m08:30:36.982687 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:30:36.983547 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:30:37.838699 [debug] [MainThread]: 1699: static parser successfully parsed marts/mart_example.sql
+[0m08:30:37.855177 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:30:37.867270 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging/stg_test_table.sql
+[0m08:30:37.905925 [debug] [MainThread]: Flushing usage events
+[0m08:30:37.906419 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.my_dbt_project.mart_example' (models/marts/mart_example.sql) depends on a node named 'stg_example' which was not found
+
+
+============================== 2025-09-29 08:33:57.349692 | 4f08af09-99d9-401f-a9f8-ff043faf7ff4 ==============================
+[0m08:33:57.349692 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:33:57.350294 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:33:57.350568 [debug] [MainThread]: Tracking: do not track
+[0m08:33:57.362943 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:33:57.363522 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:33:58.211387 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:33:58.235002 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging/stg_test_table.sql
+[0m08:33:58.296404 [debug] [MainThread]: Flushing usage events
+[0m08:33:58.296912 [error] [MainThread]: Encountered an error:
+[Errno 13] Permission denied: '/opt/dbt/target'
+[0m08:33:58.301802 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 454, in run
+    self._runtime_initialize()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 165, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 94, in _runtime_initialize
+    self.load_manifest()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 206, in get_full_manifest
+    manifest = loader.load()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 401, in load
+    self.write_manifest_for_partial_parse()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 551, in write_manifest_for_partial_parse
+    make_directory(os.path.dirname(path))
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/clients/system.py", line 125, in make_directory
+    raise e
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/clients/system.py", line 119, in make_directory
+    os.makedirs(path)
+  File "/usr/local/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/opt/dbt/target'
+
+
+
+============================== 2025-09-29 08:36:04.578241 | 42d6257b-758e-4d1a-8481-4f67a71cfc36 ==============================
+[0m08:36:04.578241 [info ] [MainThread]: Running with dbt=1.4.9
+[0m08:36:04.578812 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/opt/dbt', 'send_anonymous_usage_stats': True, 'quiet': False, 'no_print': False, 'cache_selected_only': False, 'select': ['staging.stg_test_table'], 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+[0m08:36:04.579084 [debug] [MainThread]: Tracking: do not track
+[0m08:36:04.592178 [debug] [MainThread]: checksum: 07ac7676dbf91b944d5fe41bac352fb2dda62b33015cbd1e52faa2a2c71f6d73, vars: {}, profile: None, target: None, version: 1.4.9
+[0m08:36:04.592775 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m08:36:05.451091 [debug] [MainThread]: 1603: static parser failed on staging/stg_test_table.sql
+[0m08:36:05.475116 [debug] [MainThread]: 1602: parser fallback to jinja rendering on staging/stg_test_table.sql
+[0m08:36:05.535723 [debug] [MainThread]: Flushing usage events
+[0m08:36:05.536233 [error] [MainThread]: Encountered an error:
+[Errno 13] Permission denied: '/opt/dbt/target'
+[0m08:36:05.537882 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 136, in main
+    results, succeeded = handle_and_check(args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 206, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/main.py", line 253, in run_from_args
+    results = task.run()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 454, in run
+    self._runtime_initialize()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 165, in _runtime_initialize
+    super()._runtime_initialize()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 94, in _runtime_initialize
+    self.load_manifest()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/task/runnable.py", line 81, in load_manifest
+    self.manifest = ManifestLoader.get_full_manifest(self.config)
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 206, in get_full_manifest
+    manifest = loader.load()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 401, in load
+    self.write_manifest_for_partial_parse()
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/parser/manifest.py", line 551, in write_manifest_for_partial_parse
+    make_directory(os.path.dirname(path))
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/clients/system.py", line 125, in make_directory
+    raise e
+  File "/home/airflow/.local/lib/python3.10/site-packages/dbt/clients/system.py", line 119, in make_directory
+    os.makedirs(path)
+  File "/usr/local/lib/python3.10/os.py", line 225, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/opt/dbt/target'
+

@@ -1,0 +1,9 @@
+# dbt/models/sources.yml
+version: 2
+
+sources:
+  - name: raw
+    database: TEST_DB
+    schema: DEV
+    tables:
+      - name: test_table
